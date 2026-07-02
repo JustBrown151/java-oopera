@@ -12,13 +12,13 @@ public class Actor extends Person {
         this.height = height;
     }
 
-    public double getHeight() {
+    public Integer getHeight() {
         return height;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getSurname(), height);
+        return Objects.hash(name, surname, height);
     }
 
     @Override
@@ -26,13 +26,13 @@ public class Actor extends Person {
         if (this == obj) return true;
         if (this.getClass() != obj.getClass()) return false;
         Actor otherActor = (Actor) obj;
-        return Objects.equals(this.getName(), otherActor.getName())
-                && Objects.equals(this.getSurname(), otherActor.getSurname())
+        return Objects.equals(name, otherActor.name)
+                && Objects.equals(surname, otherActor.surname)
                 && Objects.equals(height, otherActor.height);
     }
 
     @Override
     public String toString() {
-        return getName() + " " + getSurname() + " (" + height + ")";
+        return name + " " + surname + " (" + height + ")";
     }
 }
