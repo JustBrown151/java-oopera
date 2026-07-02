@@ -19,7 +19,6 @@ public class Opera extends MusicalShow {
         return choirSize;
     }
 
-
     @Override
     public void addActor(Actor actor) {
         if (getListOfActors().size() >= choirSize) {

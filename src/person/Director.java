@@ -14,7 +14,6 @@ public class Director extends Person {
         return numberOfShows;
     }
 
-
     @Override
     public String toString() {
         return getName() + " " + getSurname();

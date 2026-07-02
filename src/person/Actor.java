@@ -35,5 +35,4 @@ public class Actor extends Person {
     public String toString() {
         return getName() + " " + getSurname() + " (" + height + ")";
     }
-
 }
